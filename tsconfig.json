@@ -1,0 +1,30 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "module": "ES2022",
+    "moduleResolution": "node",
+    "types": ["bun-types"],
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+
+    "baseUrl": "./",
+    "paths": {
+      "@root/*": ["src/*"],
+      "@test/*": ["test/*"],
+      "@test-helper/*": ["test-helper/*"]
+    },
+
+    // Best practices
+    "strict": true,
+    "skipLibCheck": true,
+    "noFallthroughCasesInSwitch": true,
+
+    // Some stricter flags
+    // "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noPropertyAccessFromIndexSignature": true,
+    "noImplicitAny": true,
+    "strictFunctionTypes": true,
+    "allowUnreachableCode": false
+  }
+}
