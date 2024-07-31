@@ -1,7 +1,7 @@
 import Elysia from "elysia"
+import { isNil } from "lodash"
 
 import { HttpException } from "@root/shared/error"
-import { isNil } from "lodash"
 
 export const error = new Elysia({ name: "Plugin.Error" })
   .error({

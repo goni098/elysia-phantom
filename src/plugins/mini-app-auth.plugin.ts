@@ -1,5 +1,6 @@
+import Elysia from "elysia"
+
 import { HttpException } from "@root/shared/error"
-import Elysia, { error } from "elysia"
 
 export const miniAppAuth = new Elysia({
   name: "Plugin.MiniAppAuth"
